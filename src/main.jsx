@@ -4,6 +4,9 @@ import App from './App.jsx'
 import './index.css'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home.jsx'
+import Movie from './pages/Movie.jsx'
+import Search from './pages/Search.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
