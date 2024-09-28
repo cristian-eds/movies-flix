@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-import Movie from "./Movie";
 import MovieCard from "../components/MovieCard";
 
 const moviesURL = import.meta.env.VITE_API;
