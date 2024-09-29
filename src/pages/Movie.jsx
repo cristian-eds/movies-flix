@@ -34,7 +34,7 @@ const Movie = () => {
   useEffect(() => {
     const movieUrl = `${moviesURL}${id}?${apiKey}`;
     getMovie(movieUrl);
-},[])
+  }, [])
 
 
   return (
@@ -66,7 +66,8 @@ const Movie = () => {
             <p>
               {movie.runtime}
             </p>
-            <div className="info">
+          </div>
+          <div className="info description">
             <h3>
               <BsFillFileEarmarkTextFill /> Descrição:
             </h3>
@@ -74,7 +75,7 @@ const Movie = () => {
               {movie.overview}
             </p>
           </div>
-          </div>
+
         </>
       )}
     </div>
